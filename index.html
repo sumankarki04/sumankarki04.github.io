@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" conten
+  t="width=device-width, initial-scale=1.0" />
+  <title>Suman Karki — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <span class="nav-logo">SK</span>
+    <ul>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-tag">Available for work</div>
+    <h1>Suman<br /><span class="accent">Karki</span></h1>
+    <p class="hero-sub">Developer who builds real things —<br />web apps, AI tools, and whatever comes next.</p>
+    <div class="hero-links">
+      <a href="https://github.com/sumankarki04" target="_blank" class="btn-primary">GitHub ↗</a>
+      <a href="#projects" class="btn-ghost">See Projects</a>
+    </div>
+    <div class="hero-ticker">
+      <span>Python &nbsp;·&nbsp; Flask &nbsp;·&nbsp; AI Tools &nbsp;·&nbsp; Web Dev &nbsp;·&nbsp; SQLite &nbsp;·&nbsp; Open Source &nbsp;·&nbsp;</span>
+      <span>Python &nbsp;·&nbsp; Flask &nbsp;·&nbsp; AI Tools &nbsp;·&nbsp; Web Dev &nbsp;·&nbsp; SQLite &nbsp;·&nbsp; Open Source &nbsp;·&nbsp;</span>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <h2 class="section-title">Projects<span class="dot">.</span></h2>
+
+    <div class="projects-grid">
+
+      <div class="card" onclick="window.open('https://ghar-aagan.onrender.com','_blank')" style="cursor:pointer;">
+        <div class="card-header">
+          <span class="card-num">01</span>
+          <span class="card-status">● Live</span>
+        </div>
+        <h3>Ghar Aagan</h3>
+        <p>Home services booking platform — customers book technicians, technicians manage availability, admin oversees everything. Full auth, real-time chat, payments &amp; reviews.</p>
+        <div class="card-url">🔗 ghar-aagan.onrender.com</div>
+        <div class="tags">
+          <span>Python</span><span>Flask</span><span>SQLAlchemy</span><span>SQLite</span><span>Flask-Login</span><span>Flask-Mail</span><span>Werkzeug</span><span>Pillow</span>
+        </div>
+        <div class="card-btns">
+          <a href="https://ghar-aagan.onrender.com" target="_blank" class="btn-primary" onclick="event.stopPropagation()">Open Project ↗</a>
+          <a href="https://github.com/sumankarki04/ghar_aagan" target="_blank" class="btn-ghost" onclick="event.stopPropagation()">GitHub ↗</a>
+        </div>
+      </div>
+
+      <div class="card" onclick="window.open('https://infux.onrender.com','_blank')" style="cursor:pointer;">
+        <div class="card-header">
+          <span class="card-num">02</span>
+          <span class="card-status">● Live</span>
+        </div>
+        <h3>INFUX</h3>
+        <p>Nepal's first influencer-brand marketplace — brands post campaigns, verified influencers apply, collaborate, and get paid. Real-time chat, review system, in-app notifications, eSewa &amp; Khalti payments.</p>
+        <div class="card-url">🔗 infux.onrender.com</div>
+        <div class="tags">
+          <span>Python</span><span>Flask</span><span>PostgreSQL</span><span>Supabase</span><span>SQLAlchemy</span><span>Bootstrap 5</span><span>Flask-Login</span><span>Gunicorn</span>
+        </div>
+        <div class="card-btns">
+          <a href="https://infux.onrender.com" target="_blank" class="btn-primary" onclick="event.stopPropagation()">Open Project ↗</a>
+          <a href="https://github.com/sumankarki04/infux" target="_blank" class="btn-ghost" onclick="event.stopPropagation()">GitHub ↗</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <h2 class="section-title">Skills<span class="dot">.</span></h2>
+    <div class="skills-grid">
+      <div class="skill-group">
+        <h4>Languages</h4>
+        <div class="skill-items">
+          <span>Python</span><span>JavaScript</span><span>HTML/CSS</span><span>SQL</span><span>Java</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h4>Frameworks</h4>
+        <div class="skill-items">
+          <span>Flask</span><span>FastAPI</span><span>SQLAlchemy</span><span>WTForms</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h4>Tools & AI</h4>
+        <div class="skill-items">
+          <span>Git</span><span>Claude Code</span><span>crawl4ai</span><span>Playwright</span><span>ngrok</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h4>Databases</h4>
+        <div class="skill-items">
+          <span>SQLite</span><span>ChromaDB</span><span>PostgreSQL</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact-section">
+    <h2 class="section-title">Let's talk<span class="dot">.</span></h2>
+    <p class="contact-sub">Interested in working together or just want to say hi?</p>
+    <a href="https://github.com/sumankarki04" target="_blank" class="btn-primary big">github.com/sumankarki04 ↗</a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <span>© 2026 Suman Karki</span>
+    <span>Built with code &amp; curiosity</span>
+  </footer>
+
+</body>
+</html>
