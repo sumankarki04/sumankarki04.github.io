@@ -1,0 +1,24 @@
+name: Keep Render Awake
+
+# Pings the Render free-tier app so it doesn't sleep after 15 min idle.
+# Render free instances spin down when idle; a ping every ~10 min keeps them warm.
+on:
+  schedule:
+    - cron: "*/10 * * * *"   # every 10 minutes
+  workflow_dispatch:          # allow manual run from the Actions tab
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping Ghar Aagan
+        run: |
+          code=$(curl -s -o /dev/null -w "%{http_code}" --max-time 90 -L https://ghar-aagan-9ouy.onrender.com)
+          echo "HTTP $code"
+          # Render returns 503 while cold-starting — still a success; the ping woke it.
+          if [ "$code" = "200" ] || [ "$code" = "503" ]; then
+            echo "Ping OK"
+          else
+            echo "Unexpected status: $code"
+            exit 1
+          fi
