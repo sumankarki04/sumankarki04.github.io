@@ -2,9 +2,34 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" conten
-  t="width=device-width, initial-scale=1.0" />
-  <title>Suman Karki — Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>Suman Karki — Full-Stack Developer | Builds & Ships Real Products</title>
+  <meta name="description" content="Suman Karki — solo full-stack developer in Kathmandu, Nepal. I take web products from an empty repo to a live URL by myself. Two in production: INFUX (influencer–brand marketplace) and Ghar Aangan (home-services booking). Python · Flask · PostgreSQL." />
+  <meta name="author" content="Suman Karki" />
+  <meta name="keywords" content="Suman Karki, full-stack developer Nepal, Flask developer, Python developer, INFUX, Ghar Aangan, web developer portfolio" />
+  <meta name="theme-color" content="#0a0a0a" />
+  <link rel="canonical" href="https://sumankarki04.github.io/" />
+
+  <!-- Open Graph / social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://sumankarki04.github.io/" />
+  <meta property="og:title" content="Suman Karki — Full-Stack Developer" />
+  <meta property="og:description" content="Solo full-stack developer in Nepal. I take products from empty repo to live URL — two are in production: INFUX & Ghar Aangan." />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:image" content="https://sumankarki04.github.io/preview.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Suman Karki — Full-Stack Developer portfolio" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Suman Karki — Full-Stack Developer" />
+  <meta name="twitter:description" content="Solo full-stack developer in Nepal. I take products from empty repo to live URL — two are in production: INFUX & Ghar Aangan." />
+  <meta name="twitter:image" content="https://sumankarki04.github.io/preview.png" />
+
+  <!-- Favicon: inline SVG monogram, no extra file -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230a0a0a'/%3E%3Ctext x='50' y='68' font-family='Arial,sans-serif' font-size='52' font-weight='800' fill='%23c8f135' text-anchor='middle'%3ESK%3C/text%3E%3C/svg%3E" />
+
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,100 +37,128 @@
 </head>
 <body>
 
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <!-- ambient backdrop -->
+  <div class="bg-glow" aria-hidden="true"></div>
+  <div class="bg-grid" aria-hidden="true"></div>
+
   <!-- NAV -->
   <nav>
-    <span class="nav-logo">SK</span>
+    <a href="#" class="nav-logo" aria-label="Home">SK</a>
     <ul>
       <li><a href="#projects">Projects</a></li>
+      <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
+  <main id="main">
+
   <!-- HERO -->
-  <section class="hero">
-    <div class="hero-tag">Available for work</div>
+  <header class="hero">
+    <div class="hero-tag">Open to work · Kathmandu, Nepal</div>
     <h1>Suman<br /><span class="accent">Karki</span></h1>
-    <p class="hero-sub">Developer who builds real things —<br />web apps, AI tools, and whatever comes next.</p>
+    <p class="hero-sub">I take web products from an empty repo to a live URL — <em>solo</em>. Flask on the back, hand-built UI on the front. Two are in production right now.</p>
     <div class="hero-links">
-      <a href="https://github.com/sumankarki04" target="_blank" class="btn-primary">GitHub ↗</a>
-      <a href="#projects" class="btn-ghost">See Projects</a>
+      <a href="#projects" class="btn-primary">See what I've shipped</a>
+      <a href="https://github.com/sumankarki04" target="_blank" rel="noopener" class="btn-ghost">GitHub ↗</a>
     </div>
-    <div class="hero-ticker">
-      <span>Python &nbsp;·&nbsp; Flask &nbsp;·&nbsp; AI Tools &nbsp;·&nbsp; Web Dev &nbsp;·&nbsp; SQLite &nbsp;·&nbsp; Open Source &nbsp;·&nbsp;</span>
-      <span>Python &nbsp;·&nbsp; Flask &nbsp;·&nbsp; AI Tools &nbsp;·&nbsp; Web Dev &nbsp;·&nbsp; SQLite &nbsp;·&nbsp; Open Source &nbsp;·&nbsp;</span>
+
+    <!-- stat band -->
+    <div class="hero-stats" aria-label="At a glance">
+      <div class="stat"><span class="stat-num">2</span><span class="stat-label">Live products, shipped solo</span></div>
+      <div class="stat"><span class="stat-num">End&#8209;to&#8209;end</span><span class="stat-label">Empty repo → live URL</span></div>
+      <div class="stat"><span class="stat-num">Nepal</span><span class="stat-label">Building for the local market</span></div>
     </div>
-  </section>
+
+    <div class="hero-ticker" aria-hidden="true">
+      <span>Python &nbsp;·&nbsp; Flask &nbsp;·&nbsp; PostgreSQL &nbsp;·&nbsp; AI Tools &nbsp;·&nbsp; Web Dev &nbsp;·&nbsp; Supabase &nbsp;·&nbsp; Open Source &nbsp;·&nbsp;</span>
+      <span>Python &nbsp;·&nbsp; Flask &nbsp;·&nbsp; PostgreSQL &nbsp;·&nbsp; AI Tools &nbsp;·&nbsp; Web Dev &nbsp;·&nbsp; Supabase &nbsp;·&nbsp; Open Source &nbsp;·&nbsp;</span>
+    </div>
+  </header>
 
   <!-- PROJECTS -->
   <section id="projects" class="section">
-    <h2 class="section-title">Projects<span class="dot">.</span></h2>
+    <h2 class="section-title reveal">Projects<span class="dot">.</span></h2>
+    <p class="section-lead reveal">Two products I built and shipped by myself — both live in production today.</p>
 
     <div class="projects-grid">
 
-      <div class="card" onclick="window.open('https://ghar-aagan.onrender.com','_blank')" style="cursor:pointer;">
+      <article class="card reveal" tabindex="0" role="link" aria-label="Open INFUX" data-href="https://infux.onrender.com">
         <div class="card-header">
           <span class="card-num">01</span>
           <span class="card-status">● Live</span>
         </div>
-        <h3>Ghar Aagan</h3>
-        <p>Home services booking platform — customers book technicians, technicians manage availability, admin oversees everything. Full auth, real-time chat, payments &amp; reviews.</p>
-        <div class="card-url">🔗 ghar-aagan.onrender.com</div>
-        <div class="tags">
-          <span>Python</span><span>Flask</span><span>SQLAlchemy</span><span>SQLite</span><span>Flask-Login</span><span>Flask-Mail</span><span>Werkzeug</span><span>Pillow</span>
-        </div>
-        <div class="card-btns">
-          <a href="https://ghar-aagan.onrender.com" target="_blank" class="btn-primary" onclick="event.stopPropagation()">Open Project ↗</a>
-          <a href="https://github.com/sumankarki04/ghar_aagan" target="_blank" class="btn-ghost" onclick="event.stopPropagation()">GitHub ↗</a>
-        </div>
-      </div>
-
-      <div class="card" onclick="window.open('https://infux.onrender.com','_blank')" style="cursor:pointer;">
-        <div class="card-header">
-          <span class="card-num">02</span>
-          <span class="card-status">● Live</span>
-        </div>
         <h3>INFUX</h3>
-        <p>Nepal's first influencer-brand marketplace — brands post campaigns, verified influencers apply, collaborate, and get paid. Real-time chat, review system, in-app notifications, eSewa &amp; Khalti payments.</p>
+        <p>Nepal's first influencer–brand marketplace. Brands post campaigns, verified creators apply, collaborate, and get paid — with real-time chat, reviews, in-app notifications, and eSewa &amp; Khalti payments. Built and shipped solo, live in production.</p>
         <div class="card-url">🔗 infux.onrender.com</div>
         <div class="tags">
           <span>Python</span><span>Flask</span><span>PostgreSQL</span><span>Supabase</span><span>SQLAlchemy</span><span>Bootstrap 5</span><span>Flask-Login</span><span>Gunicorn</span>
         </div>
         <div class="card-btns">
-          <a href="https://infux.onrender.com" target="_blank" class="btn-primary" onclick="event.stopPropagation()">Open Project ↗</a>
-          <a href="https://github.com/sumankarki04/infux" target="_blank" class="btn-ghost" onclick="event.stopPropagation()">GitHub ↗</a>
+          <a href="https://infux.onrender.com" target="_blank" rel="noopener" class="btn-primary" onclick="event.stopPropagation()">Open Project ↗</a>
+          <a href="https://github.com/sumankarki04/infux" target="_blank" rel="noopener" class="btn-ghost" onclick="event.stopPropagation()">GitHub ↗</a>
         </div>
-      </div>
+      </article>
 
+      <article class="card reveal" tabindex="0" role="link" aria-label="Open Ghar Aangan" data-href="https://ghar-aagan.onrender.com">
+        <div class="card-header">
+          <span class="card-num">02</span>
+          <span class="card-status">● Live</span>
+        </div>
+        <h3>Ghar Aangan</h3>
+        <p>Booking a trusted plumber in Kathmandu used to mean calling five people. Ghar Aangan is the booking flow I wished existed — customers book vetted technicians, technicians manage availability, and admins run the whole operation. Full auth, real-time chat, payments &amp; reviews.</p>
+        <div class="card-url">🔗 ghar-aagan.onrender.com</div>
+        <div class="tags">
+          <span>Python</span><span>Flask</span><span>SQLAlchemy</span><span>SQLite</span><span>Flask-Login</span><span>Flask-Mail</span><span>Werkzeug</span><span>Pillow</span>
+        </div>
+        <div class="card-btns">
+          <a href="https://ghar-aagan.onrender.com" target="_blank" rel="noopener" class="btn-primary" onclick="event.stopPropagation()">Open Project ↗</a>
+          <a href="https://github.com/sumankarki04/ghar_aagan" target="_blank" rel="noopener" class="btn-ghost" onclick="event.stopPropagation()">GitHub ↗</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <h2 class="section-title reveal">About<span class="dot">.</span></h2>
+    <div class="about-wrap">
+      <p class="about-lead reveal">I'm a full-stack developer in Kathmandu. I like taking an idea the whole way — from the blank file to something real people can log into and use.</p>
+      <p class="about-body reveal">Most of what I build is full-stack web: Python and Flask on the back, clean responsive UI on the front, real databases (PostgreSQL, SQLite, Supabase), auth, payments, and chat. Both of my shipped products solve actual Nepali problems — connecting brands with creators, and households with reliable technicians. I care about shipping things that work in the wild, not things that only look good in a demo.</p>
+      <p class="about-body reveal">I own the whole stack myself: data models, routes, auth, deployment on Render, and the interface on top. When something breaks at 2am, it's my problem to fix — and I like it that way. Always learning what comes next.</p>
     </div>
   </section>
 
   <!-- SKILLS -->
   <section id="skills" class="section">
-    <h2 class="section-title">Skills<span class="dot">.</span></h2>
+    <h2 class="section-title reveal">Skills<span class="dot">.</span></h2>
     <div class="skills-grid">
-      <div class="skill-group">
+      <div class="skill-group reveal">
         <h4>Languages</h4>
         <div class="skill-items">
           <span>Python</span><span>JavaScript</span><span>HTML/CSS</span><span>SQL</span><span>Java</span>
         </div>
       </div>
-      <div class="skill-group">
+      <div class="skill-group reveal">
         <h4>Frameworks</h4>
         <div class="skill-items">
-          <span>Flask</span><span>FastAPI</span><span>SQLAlchemy</span><span>WTForms</span>
+          <span>Flask</span><span>FastAPI</span><span>SQLAlchemy</span><span>WTForms</span><span>Bootstrap 5</span>
         </div>
       </div>
-      <div class="skill-group">
-        <h4>Tools & AI</h4>
+      <div class="skill-group reveal">
+        <h4>Tools &amp; AI</h4>
         <div class="skill-items">
-          <span>Git</span><span>Claude Code</span><span>crawl4ai</span><span>Playwright</span><span>ngrok</span>
+          <span>Git</span><span>Claude Code</span><span>crawl4ai</span><span>Playwright</span><span>ngrok</span><span>Render</span>
         </div>
       </div>
-      <div class="skill-group">
+      <div class="skill-group reveal">
         <h4>Databases</h4>
         <div class="skill-items">
-          <span>SQLite</span><span>ChromaDB</span><span>PostgreSQL</span>
+          <span>PostgreSQL</span><span>SQLite</span><span>Supabase</span><span>ChromaDB</span>
         </div>
       </div>
     </div>
@@ -113,16 +166,73 @@
 
   <!-- CONTACT -->
   <section id="contact" class="section contact-section">
-    <h2 class="section-title">Let's talk<span class="dot">.</span></h2>
-    <p class="contact-sub">Interested in working together or just want to say hi?</p>
-    <a href="https://github.com/sumankarki04" target="_blank" class="btn-primary big">github.com/sumankarki04 ↗</a>
+    <h2 class="section-title reveal">Let's build something<span class="dot">.</span></h2>
+    <p class="contact-sub reveal">Got something that needs shipping, not just speccing? I'm open to freelance, full-time, and interesting collaborations. GitHub is the fastest way to reach me — I read every message (I'm on Nepal time, so give me a day).</p>
+    <a href="https://github.com/sumankarki04" target="_blank" rel="noopener" class="btn-primary big reveal">github.com/sumankarki04 ↗</a>
   </section>
+
+  </main>
 
   <!-- FOOTER -->
   <footer>
     <span>© 2026 Suman Karki</span>
-    <span>Built with code &amp; curiosity</span>
+    <span>Designed, coded &amp; deployed by me — every line</span>
   </footer>
+
+  <script>
+    // Scroll-reveal (respects reduced-motion)
+    (function () {
+      // Mark JS active so CSS only hides .reveal elements when we can reveal them.
+      document.documentElement.classList.add('js');
+      var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      var items = document.querySelectorAll('.reveal');
+      if (reduce || !('IntersectionObserver' in window)) {
+        items.forEach(function (el) { el.classList.add('is-visible'); });
+      } else {
+        var io = new IntersectionObserver(function (entries) {
+          entries.forEach(function (e) {
+            if (e.isIntersecting) { e.target.classList.add('is-visible'); io.unobserve(e.target); }
+          });
+        }, { threshold: 0.12 });
+        items.forEach(function (el) { io.observe(el); });
+      }
+
+      // Card click / keyboard -> open live site
+      document.querySelectorAll('.card[data-href]').forEach(function (card) {
+        var go = function () { window.open(card.dataset.href, '_blank', 'noopener'); };
+        card.addEventListener('click', go);
+        card.addEventListener('keydown', function (e) {
+          if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); go(); }
+        });
+      });
+
+      // Active nav link on scroll
+      var sections = document.querySelectorAll('section[id], header.hero');
+      var navLinks = document.querySelectorAll('nav ul a');
+      if ('IntersectionObserver' in window) {
+        var navIo = new IntersectionObserver(function (entries) {
+          entries.forEach(function (e) {
+            if (e.isIntersecting) {
+              var id = e.target.id;
+              navLinks.forEach(function (a) {
+                a.classList.toggle('active', a.getAttribute('href') === '#' + id);
+              });
+            }
+          });
+        }, { rootMargin: '-45% 0px -50% 0px' });
+        sections.forEach(function (s) { navIo.observe(s); });
+      }
+
+      // Mouse glow follows cursor (skip on touch / reduced motion)
+      if (!reduce && window.matchMedia('(pointer:fine)').matches) {
+        var glow = document.querySelector('.bg-glow');
+        window.addEventListener('pointermove', function (e) {
+          glow.style.setProperty('--mx', e.clientX + 'px');
+          glow.style.setProperty('--my', e.clientY + 'px');
+        });
+      }
+    })();
+  </script>
 
 </body>
 </html>
