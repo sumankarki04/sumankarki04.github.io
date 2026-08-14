@@ -297,12 +297,12 @@ h1, h2, h3, h4 { font-family: "Syne", sans-serif; margin: 0; }
   .book-controls { bottom: 2.4rem; gap: .8rem; }
   .ctrl-btn { padding: .55rem .9rem; font-size: .75rem; }
 
-  /* footer sat on top of the controls on mobile — keep a single
-     centered credit line and drop the long tagline */
-  .book-footer { justify-content: center; text-align: center; font-size: .62rem; padding: 0 1rem .45rem; }
-  .book-footer span:last-child { display: none; }
+  /* footer overlapped the controls on phones — drop it entirely on
+     mobile (the credit still shows on desktop) */
+  .book-footer { display: none; }
+  .book-controls { bottom: 1.6rem; }
 
-  .scroll-hint { right: 1rem; bottom: 6.4rem; }
+  .scroll-hint { right: 1rem; bottom: 5.4rem; }
 
   /* a touch more air + readable body on small screens */
   .page-inner { gap: .8rem; padding: clamp(1.4rem, 6vw, 2rem); }
