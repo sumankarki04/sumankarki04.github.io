@@ -59,11 +59,17 @@
     var wide = wideQuery.matches;
 
     // Desktop: true two-page spread. A flipped leaf lands LEFT of the
-    // spine, so slide the whole book right as it opens to keep the
-    // spine centered on screen.
-    bookEl.style.transform = wide
-      ? 'translateX(' + (Math.min(1, p) * 50) + '%)'
-      : 'none';
+    // spine, so slide the whole book right to keep the spine centered
+    // while reading. At the two ends only ONE page is showing (cover,
+    // back cover), so ramp the shift there to center that single page:
+    //   cover → first spread : 0% → 50%   (spine drifts to center)
+    //   interior spreads      : 50%        (spine stays centered)
+    //   last spread → closing : 50% → 100% (closing page drifts to center)
+    var tx;
+    if (p <= 1) tx = p * 50;
+    else if (p >= total - 1) tx = 50 + Math.min(1, p - (total - 1)) * 50;
+    else tx = 50;
+    bookEl.style.transform = wide ? 'translateX(' + tx + '%)' : 'none';
 
     sheets.forEach(function (sheet, i) {
       var amount = Math.min(1, Math.max(0, p - i));   // 0..1 flip amount for this leaf
