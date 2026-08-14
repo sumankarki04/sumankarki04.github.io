@@ -16,7 +16,7 @@
 
   var total = sheets.length;          // number of leaves
   var states = total + 1;             // 0 flipped .. all flipped
-  var labels = ['Cover', 'About · INFUX', 'Ghar Aangan · Skills', 'Contact'];
+  var labels = ['Cover', 'About · INFUX', 'Ghar Aangan · CodeCraft', 'Skills · Contact', 'Thanks'];
 
   // Runway height: one viewport per state, plus one for the start.
   function sizeTrack() {
